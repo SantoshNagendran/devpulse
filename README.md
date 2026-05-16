@@ -1,4 +1,4 @@
-# 🖥️ DevPulse — Real-Time System Monitor
+#  DevPulse — Real-Time System Monitor
 
 A real-time system health monitoring dashboard built with **Python Flask** and **Vanilla JavaScript**.
 Monitor your CPU, RAM, Disk, Battery, Network and running processes — all live in your browser.
