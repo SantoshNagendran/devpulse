@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <title>DevPulse</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-brand">
+      <span class="pulse-dot"></span>
+      DevPulse 🖥️
+    </div>
+    <div class="nav-right">
+      <span class="live-badge">● LIVE</span>
+      <span class="clock" id="clock">00:00:00</span>
+      <button class="export-btn" onclick="exportCSV()">⬇Export CSV</button>
+      <button class="theme-toggle" onclick="toggleTheme()">☀️ Light Mode</button>
+    </div>
+  </div>
+
+  <!-- SYSTEM INFO -->
+  <div class="header">
+    <div class="sysinfo">
+      <span id="hostname">...</span>
+      <span class="dot">·</span>
+      <span id="os">...</span>
+      <span class="dot">·</span>
+      <span>⏱ Uptime: <span id="uptime">...</span></span>
+    </div>
+  </div>
+
+  <!-- MAIN STATS GRID -->
+  <div class="grid">
+
+    <div class="card">
+      <h2>CPU Usage</h2>
+      <div class="value" id="cpu">0%</div>
+      <div class="bar-bg">
+        <div class="bar-fill" id="cpu-bar"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>RAM Usage</h2>
+      <div class="value" id="ram">0%</div>
+      <div class="bar-bg">
+        <div class="bar-fill" id="ram-bar"></div>
+      </div>
+      <p class="card-label" id="ram-detail">...</p>
+    </div>
+
+    <div class="card">
+      <h2>Disk Usage</h2>
+      <div class="value" id="disk">0%</div>
+      <div class="bar-bg">
+        <div class="bar-fill" id="disk-bar"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Network Sent</h2>
+      <div class="value" id="net-sent">0 MB</div>
+      <p class="card-label">Total since boot</p>
+    </div>
+
+    <div class="card">
+      <h2>Network Received</h2>
+      <div class="value" id="net-recv">0 MB</div>
+      <p class="card-label">Total since boot</p>
+    </div>
+
+    <div class="card" id="battery-card">
+      <h2>Battery</h2>
+      <div class="value" id="battery-value">...</div>
+      <div class="bar-bg">
+        <div class="bar-fill" id="battery-bar"></div>
+      </div>
+      <p class="card-label" id="battery-status">...</p>
+    </div>
+
+  </div>
+
+  <!-- CPU ALERT -->
+  <div class="alert hidden" id="cpu-alert">
+    ⚠️ High CPU Usage! Your CPU is above 80%!
+  </div>
+
+  <!-- BATTERY ALERT -->
+  <div class="alert hidden" id="battery-alert">
+    🔋 Low Battery! Please plug in your charger!
+  </div>
+
+  <!-- PROCESSES -->
+  <div class="section">
+    <h2 class="section-title">Top Processes by CPU</h2>
+    <div class="process-list" id="process-list"></div>
+  </div>
+
+ <!-- CPU HISTORY GRAPH -->
+  <div class="section">
+    <h2 class="section-title">📈 CPU History (last 60 seconds)</h2>
+    <div class="graph-container">
+      <canvas id="cpu-graph"></canvas>
+    </div>
+  </div>
+
+  <!-- RAM HISTORY GRAPH -->
+  <div class="section" style="padding-bottom: 60px;">
+    <h2 class="section-title">📈 RAM History (last 60 seconds)</h2>
+    <div class="graph-container">
+      <canvas id="ram-graph"></canvas>
+    </div>
+  </div>
+
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>
