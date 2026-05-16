@@ -1,7 +1,7 @@
-#  DevPulse — Real-Time System Monitor
+#  DevPulse Real Time System Monitor
 
-A real-time system health monitoring dashboard built with **Python Flask** and **Vanilla JavaScript**.
-Monitor your CPU, RAM, Disk, Battery, Network and running processes — all live in your browser.
+A real time system health monitoring dashboard built with **Python Flask** and **Vanilla JavaScript**.
+Monitor your CPU, RAM, Disk, Battery, Network and running processes all live in your browser.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-Backend-black)
@@ -12,11 +12,11 @@ Monitor your CPU, RAM, Disk, Battery, Network and running processes — all live
 
 ## Features
 
-- **Live CPU, RAM & Disk** usage with colour-coded progress bars
+- **Live CPU, RAM & Disk** usage with colour coded progress bars
 - **Battery** level and charging status
 - **Network** sent & received (total since boot)
 - **Top 5 processes** by CPU usage
-- **CPU & RAM history graphs** — last 60 seconds
+- **CPU & RAM history graphs** last 60 seconds
 - **Live clock** updating every second
 - **Browser notifications** when CPU exceeds 80%
 - **Export session stats** as CSV
@@ -82,6 +82,6 @@ devpulse/
 
 ---
 
-## 📄 License
+## License
 
-MIT License — free to use and modify!
+MIT License free to use and modify!
