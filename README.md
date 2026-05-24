@@ -72,7 +72,7 @@ devpulse/
     ├── dashboard.js    # Live updates + charts
     └── style.css       # Dark/light theme styling
 ```
-
+🌐 **Live Demo:** [devpulse-production-7da3.up.railway.app](https://devpulse-production-7da3.up.railway.app) Only for 30 days from now, I'm sorry if it doesn't work for you!
 ---
 
 ## Author
